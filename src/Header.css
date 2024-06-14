@@ -1,0 +1,58 @@
+.header{
+    background-color: rgba(0, 0, 0, 0.49);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin-bottom: 10px;
+    display: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.header-info{
+    margin: auto;
+    align-items: center;
+}
+.flixster{
+    text-size-adjust: auto;
+
+}
+
+.search{
+    background-color: rgba(0, 0, 0, 0.49);
+    color: rgb(188, 188, 188);
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: larger;
+    border:none;
+    transform: scale(1);
+}
+
+.search:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+.sort{
+    background-color: rgba(0, 0, 0, 0.49);
+    border-radius: 8px;
+    font-size: larger;
+    border:none;
+    color:rgb(188, 188, 188);
+    transform: scale(1);
+}
+
+.sort:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
