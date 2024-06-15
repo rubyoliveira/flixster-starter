@@ -10,9 +10,9 @@ Currently, two official plugins are available:
 
 ## Unit Assignment: Flixster
 
-Submitted by: **NAME**
+Submitted by: **Ruby Oliveira**
 
-Estimated time spent: **#** hours spent in total
+Estimated time spent: **20** hours spent in total
 
 Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
