@@ -14,7 +14,7 @@ Submitted by: **Ruby Oliveira**
 
 Estimated time spent: **20** hours spent in total
 
-Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (optional): [Flixster Deployed Site]((https://ruby-flixster.onrender.com/))
 
 ### Application Features
 
@@ -41,8 +41,8 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 #### STRETCH FEATURES
 
-- [ ] **Deployment**
-  - [ ] Website is deployed via Render.
+- [x] **Deployment**
+  - [x] Website is deployed via Render.
 - [ ] **Embedded Movie Trailers**
   - [ ] Within the popup displaying a movie's details, users can play the movie trailer.
 - [x] **Watched Checkbox**
