@@ -3,7 +3,7 @@ import './Header.css'
 import PropTypes from 'prop-types'
 
 
-const Header = ({openSearch, search, handleSortOptions}) => {
+const Header = ({openSearch, search, handleSortOptions, returnNowPlaying}) => {
     const handleSort = (event) =>{
         event.preventDefault();
         const submittedData = event.target.value;
@@ -18,7 +18,7 @@ const Header = ({openSearch, search, handleSortOptions}) => {
         {search && <button onClick={openSearch} className="search">Search</button>}
         <div className = "dropdown">
             <select className="sort" onChange = {handleSort}> 
-                <option>now playing</option>
+                <option>sort by...</option>
                 <option value={"primary_release_date.desc"}>newest</option>
                 <option value = {"revenue.desc"}>revenue</option>
                 <option value = {"popularity.desc"}>popularity</option>

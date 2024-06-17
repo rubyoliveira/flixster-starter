@@ -7,6 +7,7 @@ import.meta.env.VITE_API_KEY
 
 const App = () => {
   const [page, setPage] = useState(1)
+  const [newpage, setNewPage] = useState(1)
   const [data, setData] = useState([])
   const [modifiedData, setModifiedData] = useState([])
   const [openSearch, setOpenSearch] = useState(false);
@@ -14,7 +15,6 @@ const App = () => {
   const [openNowPlaying, setOpenNowPlaying] = useState(true);
   const [sort, setSort] = useState(false)
   const [sortOptions, setsortOptions] = useState('')
-
 
   useEffect(() => {
     const options = {
@@ -47,14 +47,12 @@ const App = () => {
           setModifiedData(response.results)
         });
     }
-    
-  }, [page, searchQuery, sortOptions]);
+  }, [page, searchQuery, sortOptions, newpage]);
 
 
   const handleClick = () => {
-    setPage(page + 1)
+      setPage(page + 1)
   }
-
   const handleSearchQuery = (term) => {
     setSearchQuery(term)
   }
@@ -68,7 +66,8 @@ const App = () => {
 
   const returnNowPlaying = () => {
     setOpenSearch(false)
-    setModifiedData(data)
+    setModifiedData(data);
+    setSort(false)
   //setData(data);
     setOpenNowPlaying(true);
   }
@@ -82,8 +81,9 @@ const App = () => {
     <div className="App">
       <Header openSearch = {handleOpenSearch} search = {openNowPlaying} handleSortOptions = {handleSortOptions}/>
       {!openNowPlaying && <button className = "now-playing" onClick = {returnNowPlaying}>Now Playing</button> }
+      {sort && <button className = "now-playing" onClick = {returnNowPlaying}>Now Playing</button>}
       {openSearch && <Search handleSearchQuery = {handleSearchQuery} />}
-      <MovieList data = {modifiedData}/>
+      <MovieList data = {modifiedData} />
       {openNowPlaying && <button onClick={handleClick} className="load-more">Load More</button>}
       {openNowPlaying && <footer className="footer">© 2024 FLIXSTER</footer>}
     </div>
